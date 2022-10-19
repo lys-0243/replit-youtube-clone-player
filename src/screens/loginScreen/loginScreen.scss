@@ -1,0 +1,88 @@
+@import '../../styles/base';
+
+.login {
+   height: 100vh;
+   display: grid;
+   place-items: center;
+
+   &__container {
+       background-color: $black-primary;
+       padding: 3rem 8rem;
+       margin: 0 1rem;
+       border-radius: 10px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+
+       button{
+           padding: 0.5rem;
+           
+           border: none;
+           background-color: $black-secondary;
+           color: $text-color;
+           font-size: 1rem;
+           border-radius: 5px;
+           margin-bottom: 1rem;
+           &:focus {
+               outline: none;
+           }
+       }
+   }
+   img {
+       width: 15vw;
+       padding-bottom: 5vh;
+       object-fit: contain;
+   }
+   &__text {
+       font-size: small;
+   }
+}
+
+.login__text{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 1.15rem;
+}
+
+@media (max-width : $breakpoint-small) {
+   .login {
+       height: 100vh;
+       display: grid;
+       place-items: center;
+       text-align: center;
+   
+       &__container {
+           background-color: $black-primary;
+           padding: 1rem 3rem;
+           margin: 0 1rem;
+           border-radius: 10px;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+   
+           button{
+               padding: 0.5rem;
+               
+               border: none;
+               background-color: $black-secondary;
+               color: $text-color;
+               font-size: 1rem;
+               border-radius: 5px;
+               margin-bottom: 1rem;
+               &:focus {
+                   outline: none;
+               }
+           }
+       }
+       img {
+           width: 30vw;
+           padding-bottom: 2vh;
+           object-fit: contain;
+       }
+
+       &__text {
+           font-size: x-small;
+       }
+   }
+}
